@@ -28,6 +28,7 @@ jobs:
         with:
           trigger: 'trigger linter please'
           reaction: rocket
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
 
       # Git Checkout
       - name: Checkout Code
